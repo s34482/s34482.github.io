@@ -4,6 +4,36 @@
   <meta charset="UTF-8">
   <title>หน้า 3: ประวัติการศึกษา</title>
   <link rel="stylesheet" href="style.css">
+  
+  <!-- สไตล์สำหรับจัดรูปภาพให้พอดีกล่องแบบอัตโนมัติ -->
+  <style>
+    .promo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .promo-card {
+      display: flex;
+      flex-direction: column;
+      border-radius: 15px;
+      padding: 15px;
+      box-sizing: border-box;
+    }
+    .card-img {
+      width: 100%;
+      height: 160px; /* ความสูงของรูปภาพ */
+      overflow: hidden;
+      border-radius: 10px;
+      margin-bottom: 12px;
+    }
+    .card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* ปรับรูปให้พอดีกล่องโดยสัดส่วนไม่เบี้ยว */
+      object-position: center;
+      display: block;
+    }
+  </style>
 </head>
 <body>
   <div class="top-bar">✨ WELCOME TO MY PORTFOLIO ✨</div>
