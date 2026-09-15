@@ -3,36 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>กัญญ์วรา จัดแจง</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color:#fc60b3 ;
-            color: #333;
-            text-align: center;
-            padding: 50px;
-        }
-        .card {
-            background: Violet;
-            padding: 30px;
-            border-radius: 50px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            max-width: 500px;
-            margin: 0 auto;
-        }
-        h1 { color: #2c3e50; }
-        p { font-size: 18px; line-height: 1.6; }
-    </style>
+    <title>Cuty Portfolio - หน้าแรก</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="site-wrapper">
+        <header>
+            <a href="index.html" class="logo">Cuty</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" class="btn-login">Login</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <div class="card">
-        <h1>ยินดีต้อนรับสู่โปรไฟล์ของหนู 👋</h1>
-        <p>สวัสดีค่ะ! หนูชื่อ <strong>กัญญ์วรา (Natchanon)</strong></p>
-        <p>ขณะนี้กำลังศึกษา/สนใจด้าน สาขาวิชาการประถมศึกษา จิตวิทยาและการแนะแนว </p>
-        <p>นี่คือเว็บไซต์แรกของหนูที่โฮสต์บน GitHub Pages!</p> 
-        <a href="portfolio.html" style="display:inline-block; background:#3498db; color:white; padding:10px 20px; text-decoration:none; border-radius:5px; margin-top:15px;">👉 ดูแฟ้มสะสมงานของฉัน</a>
+        <!-- ส่วนบน Hero -->
+        <section class="hero-top">
+            <div class="hero-left">
+                <h1 class="hero-title">Creative Design &<br>Portfolio Box</h1>
+                <p class="hero-desc">ยินดีต้อนรับสู่พื้นที่รวบรวมผลงานการออกแบบและการพัฒนาเว็บไซต์ สไตล์น่ารัก สดใส ใช้งานง่าย</p>
+                <div class="btn-group">
+                    <a href="projects.html" class="btn-pink">Get Started</a>
+                    <a href="about.html" class="btn-outline">About Me</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Hero Banner">
+            </div>
+        </section>
+
+        <!-- ส่วนคลื่นสีชมพูด้านล่าง -->
+        <section class="wave-section">
+            <h2 class="wave-title">How Does My Work Flow?</h2>
+            <div class="cards-grid">
+                <div class="cuty-card">
+                    <span class="badge-num">1</span>
+                    <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=500&q=80" alt="Step 1">
+                    <h3>UI/UX Design</h3>
+                    <p>วางโครงสร้างและออกแบบหน้าตาเว็บไซต์ให้สวยงาม</p>
+                </div>
+
+                <div class="cuty-card">
+                    <span class="badge-num">2</span>
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=500&q=80" alt="Step 2">
+                    <h3>Coding</h3>
+                    <p>เขียนโค้ดด้วย HTML และ CSS ที่สะอาดเป็นระเบียบ</p>
+                </div>
+
+                <div class="cuty-card">
+                    <span class="badge-num">3</span>
+                    <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&w=500&q=80" alt="Step 3">
+                    <h3>Publish</h3>
+                    <p>อัปโหลดขึ้น GitHub Pages เพื่อเปิดใช้งานออนไลน์</p>
+                </div>
+            </div>
+        </section>
     </div>
-
 </body>
 </html>
