@@ -3,117 +3,222 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>My Portfolio 6 Pages Store</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <span>✨ WELCOME TO MY 6-PAGE PORTFOLIO STORE | AVAILABLE FOR HIRE ✨</span>
+  </div>
+
   <!-- Navbar -->
   <nav class="navbar">
-    <div class="logo">LOGO</div>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="auth-buttons">
-      <button class="btn-login">Login</button>
-      <button class="btn-signup">Sign Up</button>
+    <div class="logo">MY<span>PORTFOLIO</span></div>
+    <div class="search-box">
+      <input type="text" placeholder="ค้นหาทักษะ, ผลงาน, เป้าหมาย...">
+      <button>🔍</button>
+    </div>
+    <div class="nav-icons">
+      <span>👤 Account</span>
+      <span>❤️ Saved</span>
     </div>
   </nav>
 
-  <!-- Hero Section with Profile Slider -->
-  <header id="home" class="hero-section">
-    <div class="hero-content">
-      <!-- Profile Card Slider -->
-      <div class="profile-slider">
-        <!-- Slide 1 -->
-        <div class="slide active">
-          <div class="img-box">
-            <img src="https://via.placeholder.com/150/ff8fa3/ffffff?text=Profile+1" alt="Profile 1">
-          </div>
-          <h2>สวัสดีครับ/ค่ะ!</h2>
-          <p>ยินดีต้อนรับสู่ Portfolio แนะนำตัวเองและผลงานของฉัน</p>
-        </div>
+  <!-- Category Nav Bar (เมนูเลือกหน้าทั้ง 6 หน้า) -->
+  <div class="cat-bar">
+    <a href="#page1" class="nav-link active">1. หน้าแรก (Home)</a>
+    <a href="#page2" class="nav-link">2. แนะนำตัว (About)</a>
+    <a href="#page3" class="nav-link">3. เป้าหมาย (Goals)</a>
+    <a href="#page4" class="nav-link">4. ทักษะ (Skills)</a>
+    <a href="#page5" class="nav-link highlight">5. ผลงาน (Projects)</a>
+    <a href="#page6" class="nav-link">6. ติดต่อ (Contact)</a>
+  </div>
 
-        <!-- Slide 2 -->
-        <div class="slide">
-          <div class="img-box">
-            <img src="https://via.placeholder.com/150/ff4d6d/ffffff?text=Profile+2" alt="Profile 2">
-          </div>
-          <h2>ทักษะและความสามารถ</h2>
-          <p>เชี่ยวชาญด้าน UX/UI Design, Web Development และการออกแบบกราฟิก</p>
+  <!-- Hero Banner Carousel (สไลด์ 6 หน้าแบบเปลี่ยนรูป + เนื้อหา) -->
+  <header class="hero-carousel">
+    <button id="prevBtn" class="carousel-arrow left">❮</button>
+    
+    <div class="carousel-track">
+      <!-- Page 1 Banner -->
+      <div class="banner-slide active bg-pink">
+        <div class="banner-content">
+          <span class="tag">PAGE 01 / 06</span>
+          <h1>MY BIG <span>PORTFOLIO</span></h1>
+          <p>ยินดีต้อนรับเข้าสู่เว็บไซต์แนะนำตัวและผลงานสไตล์ E-Commerce</p>
+          <a href="#page1" class="btn-shop">เริ่มต้นชมเลย</a>
         </div>
-
-        <!-- Slide 3 -->
-        <div class="slide">
-          <div class="img-box">
-            <img src="https://via.placeholder.com/150/c9184a/ffffff?text=Profile+3" alt="Profile 3">
-          </div>
-          <h2>ติดต่อฉัน</h2>
-          <p>พร้อมร่วมงานและสร้างสรรค์ผลงานใหม่ๆ เสมอครับ/ค่ะ</p>
+        <div class="banner-img">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80" alt="Profile 1">
         </div>
+      </div>
 
-        <!-- Controller Buttons -->
-        <div class="slider-controls">
-          <button id="prevBtn" class="btn-slider">❮ ย้อนกลับ</button>
-          <button id="nextBtn" class="btn-slider btn-primary">ถัดไป ❯</button>
+      <!-- Page 2 Banner -->
+      <div class="banner-slide bg-purple">
+        <div class="banner-content">
+          <span class="tag">PAGE 02 / 06</span>
+          <h1>ABOUT <span>MYSELF</span></h1>
+          <p>ทำความรู้จักกับตัวฉัน ประวัติการศึกษา และประสบการณ์ทำงาน</p>
+          <a href="#page2" class="btn-shop">อ่านประวัติเพิ่มเติม</a>
+        </div>
+        <div class="banner-img">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80" alt="Profile 2">
+        </div>
+      </div>
+
+      <!-- Page 3 Banner -->
+      <div class="banner-slide bg-pink">
+        <div class="banner-content">
+          <span class="tag">PAGE 03 / 06</span>
+          <h1>MY FUTURE <span>GOALS</span></h1>
+          <p>เป้าหมายการทำงานและการพัฒนาตัวเองในระยะสั้น-ยาว</p>
+          <a href="#page3" class="btn-shop">ดูเป้าหมายชีวิต</a>
+        </div>
+        <div class="banner-img">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=80" alt="Profile 3">
+        </div>
+      </div>
+
+      <!-- Page 4 Banner -->
+      <div class="banner-slide bg-purple">
+        <div class="banner-content">
+          <span class="tag">PAGE 04 / 06</span>
+          <h1>MY TECH <span>SKILLS</span></h1>
+          <p>สกิลด้านการเขียนโค้ด การออกแบบ UI/UX และเครื่องมือต่างๆ</p>
+          <a href="#page4" class="btn-shop">เช็กความสามารถ</a>
+        </div>
+        <div class="banner-img">
+          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=500&q=80" alt="Profile 4">
+        </div>
+      </div>
+
+      <!-- Page 5 Banner -->
+      <div class="banner-slide bg-pink">
+        <div class="banner-content">
+          <span class="tag">PAGE 05 / 06</span>
+          <h1>FEATURED <span>WORKS</span></h1>
+          <p>รวมผลงานออกแบบและพัฒนาเว็บไซต์ที่เคยทำมาทั้งหมด</p>
+          <a href="#page5" class="btn-shop">ดูผลงานเด่น</a>
+        </div>
+        <div class="banner-img">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=500&q=80" alt="Profile 5">
+        </div>
+      </div>
+
+      <!-- Page 6 Banner -->
+      <div class="banner-slide bg-purple">
+        <div class="banner-content">
+          <span class="tag">PAGE 06 / 06</span>
+          <h1>GET IN <span>TOUCH</span></h1>
+          <p>ช่องทางการติดต่อ พูดคุยสอบถาม หรือติดต่องาน</p>
+          <a href="#page6" class="btn-shop">ส่งข้อความหาฉัน</a>
+        </div>
+        <div class="banner-img">
+          <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=500&q=80" alt="Profile 6">
         </div>
       </div>
     </div>
+
+    <button id="nextBtn" class="carousel-arrow right">❯</button>
   </header>
 
-  <!-- Featured / Portfolio Section -->
-  <section id="portfolio" class="featured-section">
-    <div class="section-title">
-      <div class="icon-badge">★</div>
-      <h2>Featured Works</h2>
-      <p>ตัวอย่างผลงานเด่นและการโปรเจกต์ที่เคยทำ</p>
+  <!-- Content Sections ทั้ง 6 หน้า -->
+
+  <!-- 1. หน้าแรก (Home Overview) -->
+  <section id="page1" class="section-container">
+    <h2 class="section-title">01. หน้าแรก (Home Overview)</h2>
+    <div class="home-intro">
+      <h3>ยินดีต้อนรับสู่เว็บ Portfolio สไตล์ร้านค้าช้อปปิ้งออนไลน์!</h3>
+      <p>คุณสามารถกดปุ่ม ❯ หรือ ❮ บนแบนเนอร์เพื่อสไลด์เปลี่ยนรูปแนะนำตัวทั้ง 6 สไลด์ หรือกดเลือกดูหมวดหมู่ทั้ง 6 ด้านล่างได้เลยครับ</p>
     </div>
+  </section>
 
-    <div class="card-grid">
-      <div class="card">
-        <div class="card-img"></div>
-        <h3>Project One</h3>
-        <p>รายละเอียดโดยย่อของผลงานชิ้นที่ 1</p>
+  <!-- 2. หน้าแนะนำตัว (About Me) -->
+  <section id="page2" class="section-container">
+    <h2 class="section-title">02. แนะนำตัว (About Me)</h2>
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>👤 ข้อมูลส่วนตัว</h3>
+        <p>ชื่อ-นามสกุล: นักพัฒนาเว็บใจรักดีไซน์<br>ตำแหน่ง: Frontend Developer & UI/UX Designer</p>
       </div>
+      <div class="about-card">
+        <h3>🎓 ประวัติการศึกษา</h3>
+        <p>ปริญญาตรี สาขาเทคโนโลยีสารสนเทศ / วิทยาการคอมพิวเตอร์</p>
+      </div>
+    </div>
+  </section>
 
-      <div class="card active-card">
-        <div class="card-img"></div>
-        <h3>Project Two</h3>
-        <p>รายละเอียดโดยย่อของผลงานชิ้นที่ 2</p>
+  <!-- 3. หน้าเป้าหมาย (Goals) -->
+  <section id="page3" class="section-container">
+    <h2 class="section-title">03. เป้าหมายชีวิตและการทำงาน (My Goals)</h2>
+    <div class="promo-grid">
+      <div class="promo-card pink-bg">
+        <h3>เป้าหมายระยะสั้น</h3>
+        <p>สร้าง Portfolio และฝึกฝนทักษะการเขียนโค้ด modern JS ให้เก่งขึ้นทุกวัน</p>
       </div>
+      <div class="promo-card gray-bg">
+        <h3>เป้าหมายระยะกลาง</h3>
+        <p>ร่วมงานกับบริษัทไอทีระดับมืออาชีพ และรับหน้าที่ดูแลโปรเจกต์ใหญ่</p>
+      </div>
+      <div class="promo-card dark-pink-bg">
+        <h3>เป้าหมายระยะยาว</h3>
+        <p>เติบโตเป็น Full-Stack Specialist และสร้างผลิตภัณฑ์ที่ตอบโจทย์คนนับล้าน</p>
+      </div>
+    </div>
+  </section>
 
-      <div class="card">
-        <div class="card-img"></div>
-        <h3>Project Three</h3>
-        <p>รายละเอียดโดยย่อของผลงานชิ้นที่ 3</p>
+  <!-- 4. หน้าทักษะ (Skills & Category) -->
+  <section id="page4" class="section-container">
+    <h2 class="section-title">04. หมวดหมู่ทักษะความสามารถ (Skills)</h2>
+    <div class="department-grid">
+      <div class="dept-box"><div class="icon">💻</div><div class="text"><h4>HTML5 / CSS3</h4><p>ระดับ: เชี่ยวชาญ</p></div></div>
+      <div class="dept-box"><div class="icon">⚡</div><div class="text"><h4>JavaScript</h4><p>ระดับ: ปานกลาง - สูง</p></div></div>
+      <div class="dept-box"><div class="icon">🎨</div><div class="text"><h4>UI/UX Design</h4><p>Figma & Wireframe</p></div></div>
+      <div class="dept-box"><div class="icon">📱</div><div class="text"><h4>Responsive Web</h4><p>รองรับทุกหน้าจอ</p></div></div>
+    </div>
+  </section>
+
+  <!-- 5. หน้าผลงาน (Featured Projects) -->
+  <section id="page5" class="section-container">
+    <h2 class="section-title">05. ผลงานเด่น (Featured Projects)</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="card-img-holder"><img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=300&q=80" alt="Project 1"></div>
+        <h3>E-Commerce Web</h3>
+        <p class="desc">เว็บขายสินค้าโทนสีชมพู</p>
+        <span class="badge">PROJECT 01</span>
       </div>
+      <div class="product-card">
+        <div class="card-img-holder"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=300&q=80" alt="Project 2"></div>
+        <h3>Dashboard App</h3>
+        <p class="desc">ระบบจัดการข้อมูลและกราฟ</p>
+        <span class="badge">PROJECT 02</span>
+      </div>
+      <div class="product-card">
+        <div class="card-img-holder"><img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=300&q=80" alt="Project 3"></div>
+        <h3>Mobile Web Design</h3>
+        <p class="desc">ดีไซน์สำหรับใช้งานบนมือถือ</p>
+        <span class="badge">PROJECT 03</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. หน้าติดต่อ (Contact Us) -->
+  <section id="page6" class="section-container">
+    <h2 class="section-title">06. ช่องทางการติดต่อ (Contact Info)</h2>
+    <div class="contact-box">
+      <p>📍 **ที่อยู่:** กรุงเทพมหานคร, ประเทศไทย</p>
+      <p>✉️ **อีเมล:** contact@myportfolio.com</p>
+      <p>📞 **เบอร์โทรศัพท์:** 081-234-5678</p>
+      <p>🌐 **Social:** @myportfolio_official</p>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-col">
-        <h4>Company Name</h4>
-        <p>รายละเอียดเกี่ยวกับเว็บไซต์หรือบริการของคุณ</p>
-      </div>
-      <div class="footer-col">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Services</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <p>📍 Address: Bangkok, Thailand</p>
-        <p>📞 Phone: +66 81 234 5678</p>
-        <p>✉️ Email: info@example.com</p>
-      </div>
+    <div class="footer-bottom">
+      <p>© 2026 My 6-Page Portfolio Website. All Rights Reserved.</p>
     </div>
   </footer>
 
