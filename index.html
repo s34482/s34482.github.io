@@ -1,66 +1,122 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuty Portfolio - หน้าแรก</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="site-wrapper">
-        <header>
-            <a href="index.html" class="logo">Cuty</a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
 
-        <!-- ส่วนบน Hero -->
-        <section class="hero-top">
-            <div class="hero-left">
-                <h1 class="hero-title">Creative Design &<br>Portfolio Box</h1>
-                <p class="hero-desc">ยินดีต้อนรับสู่พื้นที่รวบรวมผลงานการออกแบบและการพัฒนาเว็บไซต์ สไตล์น่ารัก สดใส ใช้งานง่าย</p>
-                <div class="btn-group">
-                    <a href="projects.html" class="btn-pink">Get Started</a>
-                    <a href="about.html" class="btn-outline">About Me</a>
-                </div>
-            </div>
-            <div class="hero-right">
-                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Hero Banner">
-            </div>
-        </section>
-
-        <!-- ส่วนคลื่นสีชมพูด้านล่าง -->
-        <section class="wave-section">
-            <h2 class="wave-title">How Does My Work Flow?</h2>
-            <div class="cards-grid">
-                <div class="cuty-card">
-                    <span class="badge-num">1</span>
-                    <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=500&q=80" alt="Step 1">
-                    <h3>UI/UX Design</h3>
-                    <p>วางโครงสร้างและออกแบบหน้าตาเว็บไซต์ให้สวยงาม</p>
-                </div>
-
-                <div class="cuty-card">
-                    <span class="badge-num">2</span>
-                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=500&q=80" alt="Step 2">
-                    <h3>Coding</h3>
-                    <p>เขียนโค้ดด้วย HTML และ CSS ที่สะอาดเป็นระเบียบ</p>
-                </div>
-
-                <div class="cuty-card">
-                    <span class="badge-num">3</span>
-                    <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&w=500&q=80" alt="Step 3">
-                    <h3>Publish</h3>
-                    <p>อัปโหลดขึ้น GitHub Pages เพื่อเปิดใช้งานออนไลน์</p>
-                </div>
-            </div>
-        </section>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">LOGO</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="auth-buttons">
+      <button class="btn-login">Login</button>
+      <button class="btn-signup">Sign Up</button>
     </div>
+  </nav>
+
+  <!-- Hero Section with Profile Slider -->
+  <header id="home" class="hero-section">
+    <div class="hero-content">
+      <!-- Profile Card Slider -->
+      <div class="profile-slider">
+        <!-- Slide 1 -->
+        <div class="slide active">
+          <div class="img-box">
+            <img src="https://via.placeholder.com/150/ff8fa3/ffffff?text=Profile+1" alt="Profile 1">
+          </div>
+          <h2>สวัสดีครับ/ค่ะ!</h2>
+          <p>ยินดีต้อนรับสู่ Portfolio แนะนำตัวเองและผลงานของฉัน</p>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide">
+          <div class="img-box">
+            <img src="https://via.placeholder.com/150/ff4d6d/ffffff?text=Profile+2" alt="Profile 2">
+          </div>
+          <h2>ทักษะและความสามารถ</h2>
+          <p>เชี่ยวชาญด้าน UX/UI Design, Web Development และการออกแบบกราฟิก</p>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide">
+          <div class="img-box">
+            <img src="https://via.placeholder.com/150/c9184a/ffffff?text=Profile+3" alt="Profile 3">
+          </div>
+          <h2>ติดต่อฉัน</h2>
+          <p>พร้อมร่วมงานและสร้างสรรค์ผลงานใหม่ๆ เสมอครับ/ค่ะ</p>
+        </div>
+
+        <!-- Controller Buttons -->
+        <div class="slider-controls">
+          <button id="prevBtn" class="btn-slider">❮ ย้อนกลับ</button>
+          <button id="nextBtn" class="btn-slider btn-primary">ถัดไป ❯</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Featured / Portfolio Section -->
+  <section id="portfolio" class="featured-section">
+    <div class="section-title">
+      <div class="icon-badge">★</div>
+      <h2>Featured Works</h2>
+      <p>ตัวอย่างผลงานเด่นและการโปรเจกต์ที่เคยทำ</p>
+    </div>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-img"></div>
+        <h3>Project One</h3>
+        <p>รายละเอียดโดยย่อของผลงานชิ้นที่ 1</p>
+      </div>
+
+      <div class="card active-card">
+        <div class="card-img"></div>
+        <h3>Project Two</h3>
+        <p>รายละเอียดโดยย่อของผลงานชิ้นที่ 2</p>
+      </div>
+
+      <div class="card">
+        <div class="card-img"></div>
+        <h3>Project Three</h3>
+        <p>รายละเอียดโดยย่อของผลงานชิ้นที่ 3</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>Company Name</h4>
+        <p>รายละเอียดเกี่ยวกับเว็บไซต์หรือบริการของคุณ</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>📍 Address: Bangkok, Thailand</p>
+        <p>📞 Phone: +66 81 234 5678</p>
+        <p>✉️ Email: info@example.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
